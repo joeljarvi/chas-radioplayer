@@ -1,0 +1,21 @@
+1. What is OWASP and what is its primary mission as described in the article?
+
+2. Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+
+3. Explain two strategies to prevent Broken Authentication vulnerabilities.
+
+4. Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+
+5. Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+
+
+
+1. OWASP är en internationell non-profit organisation som tillhandahåller en ständigt uppdaterad lista på de senaste säkerhetsriskerna inom webbsäkerhet. OWASPS material finns tillgängligt på deras hemsida och består av dokumentation, verktyg, videos och ett forum för användare.
+
+2. En "Injection" eller "SQL Injection" är när en fientlig aktör medvetet injecerar felaktig kod i t.ex ett sökfält för att utnyttja svagheter i koden för att, exempelvis få fram data från en sekretessbelagd databas, eller annan känslig information. 
+
+3. För att bekämpa "Broken Authentication vulnerabilities", dvs säkerheten kring användaruppgifter, användarnamn och lösenord, kan man använda sig av olika strategier. En av dem är två faktors authentication (2FA), denna strategi innebär att verifieringen delas upp i två steg. Det kan vara att man utöver ett lösenord även behöver skriva en kod som skickas till användarens mobila enhet, eller någon typ av säkerhetsfråga, fingeravtryck eller att du behöver befinna dig geografiskt på en specifik plats för att få tillträde.
+
+4. Serialization är när en hemsida, packar ihop en större mängd data till ett litet objekt som är lättare att skicka och ta emot mellan olika nätverk. Deserialization är när dessa smidiga små objekt packas upp till stora objekt som hackare, eller allmänt fientliga aktörer kan manipulera och injecera fientlig kod i. Som utvecklare bör man undivka deserialization helt och hållet. Om man ändå måste så kan man t.ex implementera en digital signatur för att kontrollera datans integritet.
+
+5. Cross-site scripting är när en fientlig aktör skickar en länk till en person varpå personen sedan klickar på länken och när webbläsaren sedan läser länken så sätts ett fientligt script igång i personens webbläsare som hämtar känslig data och skickar till den fientliga aktören. En metod kan vara att undvika möjligheten att posta HTML i form inputs eller att se till att när användare skriver in sitt t.ex "Last Name" är det bara möjligt att skriva latinska bokstäver och inte några taggar>< eller andra symboler.

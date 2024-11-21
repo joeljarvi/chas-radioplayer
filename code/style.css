@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: lightgreen;
+}
+#channels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  gap: 20px;
+}
+
+.channelBox {
+  display: flex;
+}
+
+.titleRadio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  text-align: flex-start;
+  height: 200px;
+}
+
+img {
+  height: 200px;
+  width: 200x;
+}
